@@ -1,0 +1,230 @@
+:root {
+    --RichBlack: hsl(198, 100%, 5%);
+    --MidnightGreen: hsl(190, 100%, 23%);
+    --DarkCyan: hsl(181, 89%, 31%);
+    --TiffanyBlue: hsl(160, 41%, 70%);
+    --Vanilla: hsl(45, 61%, 78%);
+    --Gamboge: hsl(39, 100%, 47%);
+    --AlloyOrange: hsl(30, 98%, 40%);
+    --Rust: hsl(19, 97%, 37%);
+    --Rufous: hsl(5, 81%, 38%);
+    --Auburn: hsl(358, 64%, 37%);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--MidnightGreen);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    top: 0rem;
+    left: 0rem;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border: 0.2rem solid var(--AlloyOrange);
+    border-top: none;
+    border-radius: 0rem 0rem 2rem 2rem;
+    background-color: var(--Rufous);
+    box-shadow: 0rem 0.8rem 1.2rem hsla(358, 64%, 37%, 0.8);
+    color: var(--Vanilla);
+    text-shadow: 1px 1px var(--Gamboge);
+    font-size: x-large;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+header div{
+    display: flex;
+    width: 70%;
+    margin-left: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav{
+    display: flex;
+}
+header nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 0.8rem;
+}
+header nav ul li{
+    display: flex;
+    gap: 0.8rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    transition: 300ms ease-in;
+    user-select: none;
+    cursor: pointer;
+}
+header li img{
+    height: 2rem;
+    transition: 1s ease;
+}
+header nav ul li:hover{
+    text-shadow: 1px 1px var(--AlloyOrange);
+    color: var(--Gamboge);
+    text-decoration: underline 0.2rem var(--RichBlack);
+    transform: scale(1.1);
+}
+header a{
+    text-decoration: none;
+    color: var(--Vanilla);
+}
+header #usuario{
+    background-image: url(../assets/icones/usuario.png);
+    background-repeat: no-repeat;
+    background-position: 0.4rem;
+    background-size: 2rem;
+    padding-left: 1.5rem;
+    border-radius: 1rem;
+    text-indent: 1rem;
+    text-shadow: 1px 1px var(--Gamboge);
+    transition: 300ms ease-in;
+    user-select: none;
+    cursor: pointer;
+}
+header #usuario:hover{
+    background-image: url(../assets/icones/usuarioOn.png);
+    text-decoration: underline 0.2rem var(--RichBlack);
+    text-shadow: 1px 1px var(--AlloyOrange);
+    color: var(--Gamboge);
+    transform: scale(1.1);
+}
+header img{
+    margin-left: 8%;
+    height: 4rem;
+    border-radius: 1rem;
+}
+main img{
+    width: 100%;
+    box-shadow: 0 0 2rem var(--Vanilla);
+}
+main section{
+    width: 100%;
+    z-index: 2;
+    background-color: var(--MidnightGreen);
+}
+main section img{
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 0 2rem var(--TiffanyBlue);
+}
+main section article{
+    width: 70rem;
+    margin: auto;
+    padding: 2rem;
+    color: var(--TiffanyBlue);
+}
+main section article h3{
+    padding-left: 3rem;
+    font-size: xx-large;
+}
+.imgLateral{
+    display: flex;
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+    align-items: center;
+}
+.imgLateral img{
+    margin-left: 2rem;
+    width: 40%;
+}
+main a{
+    text-decoration:underline;
+    color: var(--Vanilla);
+    transition: 0.4s ease-in-out;
+}
+main a:hover{
+    text-decoration: none;
+    color: var(--DarkCyan);
+    transition: 0.4s ease-in-out;
+}
+#download{
+    width: 100%;
+    margin: auto;
+    background-color: var(--TiffanyBlue);
+}
+#download article{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 40rem auto;
+    gap: 1rem;
+    width: 60rem;
+    margin: auto;
+    padding: 2rem;
+    color: var(--MidnightGreen);
+}
+#download h3{
+    font-size: x-large;
+}
+#download p{
+    grid-column: 1;
+}
+#download div{
+    grid-row: 1 / 3;
+    grid-column: 2;
+    padding: 1rem;
+}
+#download div ul{
+    list-style: none;
+}
+#download div ul li{
+    background-color: var(--AlloyOrange);
+    color: var(--TiffanyBlue);
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+#download div ul li:hover{
+    background-color: var(--DarkCyan);
+    color: var(--RichBlack);
+    transform: scale(1.2);
+}
+footer{
+    width: 100%;
+    background-color: var(--RichBlack);
+    color: var(--DarkCyan);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+footer section{
+    width: 50%;
+    padding-top: 2rem;
+    margin: auto;
+}
+footer a{
+    text-decoration:none;
+    color: var(--Vanilla);
+    transition: 0.4s ease-in-out;
+}
+footer a:hover{
+    color: var(--Gamboge);
+    text-decoration: none;
+}
+.redeSocial{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+.redeSocial ul{
+    text-align: center;
+    list-style-type: none;
+}
+.redeSocial ul li{
+    display: inline;
+    padding: 0.6rem;
+    margin-right: 2rem;
+    text-align:left;
+}
