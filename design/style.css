@@ -15,9 +15,11 @@
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: var(--MidnightGreen);
-    color: var(--TiffanyBlue);
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 header{
@@ -51,18 +53,22 @@ header div{
 header nav ul{
     list-style-type: none;
     display: flex;
-    gap: 0.8rem;
 }
 header nav ul li{
+    background-image: url(../assets/icones/botoesNavbar.png);
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size: 2rem;
     display: flex;
     gap: 0.8rem;
-    padding: 1rem;
+    padding: 1rem 3rem;
     border-radius: 1rem;
     transition: 300ms ease-in;
     user-select: none;
     cursor: pointer;
 }
 header nav ul li:hover{
+    background-image: url(../assets/icones/botoesNavbarOn.png);
     text-shadow: 1px 1px var(--AlloyOrange);
     color: var(--Gamboge);
     text-decoration: underline 0.2rem var(--RichBlack);
@@ -97,14 +103,13 @@ header #usuario:hover{
 }
 main{
     margin-top: 2rem;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 main img{
     width: 100%;
     box-shadow: 0 0 2rem var(--Vanilla);
 }
 main section{
-    padding-top: 2rem;
     padding-bottom: 2rem;
 }
 main h3{
@@ -144,8 +149,6 @@ footer a:hover{
     text-decoration: none;
 }
 #download{
-    width: 100%;
-    margin: auto;
     background-color: var(--TiffanyBlue);
     box-shadow: 0 0 2rem var(--TiffanyBlue);
 }
@@ -155,7 +158,6 @@ footer a:hover{
     grid-template-columns: 30rem auto;
     gap: 1rem;
     width: 60rem;
-    margin: auto;
     padding: 2rem;
     color: var(--MidnightGreen);
 }
@@ -192,6 +194,24 @@ footer a:hover{
     color: var(--RichBlack);
     transform: scale(1.2);
 }
+#bounty{
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+#bounty img{
+    width: 15rem;
+}
+#bounty h4{
+    font-size: larger;
+    margin-bottom: 1rem;
+}
+#bounty p{
+    width: 20rem;
+    line-height: 1.2rem;
+    text-indent: 0.2rem;
+}
 .conteudo{
     width: 90%;
     margin: auto;
@@ -210,24 +230,6 @@ footer a:hover{
     width: 35rem;
     line-height: 1.5rem;
     padding-left: 1rem;
-}
-.bemVindo div{
-    margin-top: 5%;
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    padding: 1rem;
-}
-.bemVindo div img{
-    width: 15rem;
-}
-.bemVindo div p{
-    width: 20%;
-    color: var(--RichBlack);
-    text-shadow: -0.1rem 0.1rem 0.2rem var(--DarkCyan);
-    line-height: 1.2rem;
-    text-indent: 0.5rem;
 }
 .sistemas{
     width: 60rem;
@@ -254,17 +256,17 @@ footer a:hover{
 }
 .sistemas table{
     width: 80%;
+    color: var(--TiffanyBlue);
 }
 .sistemas tr{
     vertical-align: text-top;
 }
 .sistemas th{
     font-size: large;
-    text-shadow: 1px 2px 1px var(--DarkCyan);
     text-align: right;
     width: 40%;
     padding-right: 0.5rem;
-    /* text-decoration: 0.2rem underline var(--DarkCyan); */
+    text-decoration: 0.2rem overline var(--DarkCyan);
 }
 .sistemas td{
     margin-bottom: 1rem;
@@ -292,4 +294,17 @@ footer a:hover{
     padding: 0.6rem;
     margin-right: 2rem;
     text-align:left;
+}
+main p, span, li{
+    color: var(--TiffanyBlue);
+    font-weight: 400;
+}
+main p, span.comentario{
+    color: var(--Vanilla);
+    text-shadow: 0 0.1rem var(--Rufous);
+    font-size: medium;
+}
+main .textoSombreado{
+    color: var(--TiffanyBlue);
+    text-shadow: -0.1rem 0.1rem 0.2rem var(--RichBlack);
 }
