@@ -1,0 +1,66 @@
+:root {
+    --RichBlack: hsl(198, 100%, 5%);
+    --MidnightGreen: hsl(190, 100%, 23%);
+    --DarkCyan: hsl(181, 89%, 31%);
+    --TiffanyBlue: hsl(160, 41%, 70%);
+    --Vanilla: hsl(45, 61%, 78%);
+    --Gamboge: hsl(39, 100%, 47%);
+    --AlloyOrange: hsl(30, 98%, 40%);
+    --Rust: hsl(19, 97%, 37%);
+    --Rufous: hsl(5, 81%, 38%);
+    --Auburn: hsl(358, 64%, 37%);
+}
+/* Configurações Padrão das Páginas */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+main p, main span, main li, #bounty{
+    color: var(--TiffanyBlue);
+    font-weight: 400;
+}
+main .comentario{
+    color: var(--Vanilla);
+    text-shadow: 0 0.1rem var(--Rufous);
+    font-size: medium;
+}
+main .textoSombreado{
+    /* color: var(--TiffanyBlue); */
+    text-shadow: -0.1rem 0.1rem 0.2rem var(--RichBlack);
+}
+main h3{
+    font-size: xx-large;
+    text-shadow: 1px 2px 3px var(--RichBlack);
+}
+main a{
+    text-decoration:underline;
+    color: var(--Vanilla);
+    transition: 0.4s ease-in-out;
+}
+main a:hover{
+    text-decoration: none;
+    color: var(--DarkCyan);
+    transition: 0.4s ease-in-out;
+}
+body{
+    background-color: var(--MidnightGreen);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+main{
+    width: 80rem;
+    margin-top: 2rem;
+    margin-bottom: 5%;
+    scroll-behavior: smooth;
+}
+/* Conteudo da Página */
+main > article{
+    width: 70rem;   
+}
+#listaLinhagem{
+    display: flex;
+    flex-direction: column;
+}
+#listaLinhagem div{
+    display: flex;
+}
