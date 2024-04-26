@@ -1,0 +1,198 @@
+:root {
+    --RichBlack: hsl(198, 100%, 5%);
+    --MidnightGreen: hsl(190, 100%, 23%);
+    --DarkCyan: hsl(181, 89%, 31%);
+    --TiffanyBlue: hsl(160, 41%, 70%);
+    --Vanilla: hsl(45, 61%, 78%);
+    --Gamboge: hsl(39, 100%, 47%);
+    --AlloyOrange: hsl(30, 98%, 40%);
+    --Rust: hsl(19, 97%, 37%);
+    --Rufous: hsl(5, 81%, 38%);
+    --Auburn: hsl(358, 64%, 37%);
+}
+/* Configurações Padrão das Páginas */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+main p, main span, main li, #bounty{
+    color: var(--TiffanyBlue);
+    font-weight: 400;
+}
+main .comentario{
+    color: var(--Vanilla);
+    text-shadow: 0 0.1rem var(--Rufous);
+    font-size: medium;
+}
+main .textoSombreado{
+    color: var(--TiffanyBlue);
+    text-shadow: -0.1rem 0.1rem 0.2rem var(--RichBlack);
+}
+main h3{
+    font-size: xx-large;
+    text-shadow: 1px 2px 3px var(--RichBlack);
+}
+main a{
+    text-decoration:underline;
+    color: var(--Vanilla);
+    transition: 0.4s ease-in-out;
+}
+main a:hover{
+    text-decoration: none;
+    color: var(--DarkCyan);
+    transition: 0.4s ease-in-out;
+}
+body{
+    background-color: var(--MidnightGreen);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+main{
+    width: 83.5rem;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 5%;
+    scroll-behavior: smooth;
+}
+
+/* Conteudos das Paginas */
+main img{
+    width: 100%;
+    box-shadow: 0 0 2rem var(--Vanilla);
+}
+main section{
+    padding-bottom: 2rem;
+}
+#inicio {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+}
+#inicio p {
+    line-height: 1.5rem;
+}
+#download{
+    background-color: var(--TiffanyBlue);
+    box-shadow: 0 0 2rem var(--TiffanyBlue);
+}
+#download article{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 30rem auto;
+    gap: 1rem;
+    width: 60rem;
+    padding: 2rem;
+    color: var(--MidnightGreen);
+}
+#download h3{
+    font-size: x-large;
+    font-weight: 900;
+}
+#download .dowTexto{
+    grid-column: 1;
+    text-align:left;
+    padding-left: 2rem;
+}
+#download .dowBotoes{
+    grid-row: 1/4;
+    grid-column: 2;
+    padding: 1rem;
+}
+#download div ul{
+    list-style: none;
+}
+#download div ul li{
+    background-color: var(--AlloyOrange);
+    color: var(--Vanilla);
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    padding: 0.8rem;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+#download div ul li:hover{
+    background-color: var(--DarkCyan);
+    color: var(--RichBlack);
+    transform: scale(1.2);
+    z-index: 5;
+}
+#bounty{
+    margin-top: 5rem;
+}
+#bounty table{
+    display: flex;
+    list-style: none;
+    text-align: left;
+}
+#bounty td{
+    border-left: 0.2rem solid var(--MidnightGreen);
+    padding: 0.2rem;
+}
+#bounty div{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: max-content;
+    gap: 2rem;
+}
+#bounty div img{
+    width: 12rem;
+}
+.sistemas{
+    width: 60rem;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    margin-top: 5rem;
+    text-align: left;
+    align-items: flex-start;
+}
+.sistemas section{
+    display: flex;
+    width: 80%;
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+.sistemas span{
+    font-size: larger;
+    font-weight: 800;
+    font-stretch: expanded;
+}
+.sistemas table{
+    width: 80%;
+    color: var(--TiffanyBlue);
+}
+.sistemas tr{
+    vertical-align: text-top;
+}
+.sistemas th{
+    font-size: large;
+    text-align: right;
+    width: 40%;
+    text-decoration: 0.1rem wavy overline var(--DarkCyan);
+}
+.sistemas td{
+    padding: 0.5rem;
+    border-right: 0.3rem double var(--DarkCyan);
+    border-bottom: 0.3rem double var(--DarkCyan);
+    border-radius: 0 0.5rem 1rem;
+}
+.sistemas img{
+    height: 15rem;
+    margin-bottom: 2rem;
+}
+
+/* Textos */
+#bounty th, #bounty .comentario{
+    text-align: center;
+}
+#bounty td, #bounty p{
+    line-height: 1.2rem;
+    text-indent: 0.2rem;
+}#bounty th{
+    font-size: x-large;
+}

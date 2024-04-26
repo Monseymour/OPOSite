@@ -1,0 +1,55 @@
+:root {
+    --RichBlack: hsl(198, 100%, 5%);
+    --MidnightGreen: hsl(190, 100%, 23%);
+    --DarkCyan: hsl(181, 89%, 31%);
+    --TiffanyBlue: hsl(160, 41%, 70%);
+    --Vanilla: hsl(45, 61%, 78%);
+    --Gamboge: hsl(39, 100%, 47%);
+    --AlloyOrange: hsl(30, 98%, 40%);
+    --Rust: hsl(19, 97%, 37%);
+    --Rufous: hsl(5, 81%, 38%);
+    --Auburn: hsl(358, 64%, 37%);
+}
+
+footer{
+    width: 100%;
+    padding-top: 1rem;
+    background-color: var(--RichBlack);
+    box-shadow: 0 0 2rem var(--MidnightGreen);
+    color: var(--DarkCyan);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+footer section{
+    padding-bottom: 1rem;
+}
+footer a{
+    text-decoration:none;
+    color: var(--Vanilla);
+    transition: 0.4s ease-in-out;
+}
+footer a:hover{
+    color: var(--Gamboge);
+    text-decoration: none;
+}
+.conteudoCentral{
+    width: 70rem;
+    margin: auto;
+}
+.redeSocial{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    width: 50rem;
+}
+.redeSocial ul{
+    text-align: center;
+    list-style-type: none;
+}
+.redeSocial ul li{
+    display: inline;
+    padding: 0.6rem;
+    margin-right: 2rem;
+    text-align:left;
+}
