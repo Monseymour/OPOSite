@@ -74,6 +74,7 @@ main section{
     line-height: 1.5rem;
 }
 #download{
+	width: 100%;
     background-color: var(--TiffanyBlue);
     box-shadow: 0 0 2rem var(--TiffanyBlue);
 }
@@ -81,6 +82,7 @@ main section{
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: 30rem auto;
+	margin: auto;
     gap: 1rem;
     width: 60rem;
     padding: 2rem;

@@ -20,6 +20,7 @@ footer{
     font-family: 'Courier New', Courier, monospace;
     font-weight: 600;
     text-transform: uppercase;
+	z-index: 90;
 }
 footer section{
     padding-bottom: 1rem;

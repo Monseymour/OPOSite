@@ -67,12 +67,12 @@ nav{
 }
 @keyframes girarIcone{
     0%{
-        transform: rotate(60deg);
+        transform: rotate(90deg);
     }
-    45%{
-        transform: rotate(-105deg);
+    70%{
+        transform: rotate(-130deg);
     }
     100%{
-        transform: rotate(45deg);
+        transform: rotate(40deg);
     }
 }
