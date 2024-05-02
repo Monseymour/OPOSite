@@ -1,0 +1,172 @@
+:root {
+    --RichBlack: hsl(198, 100%, 5%);
+    --MidnightGreen: hsl(190, 100%, 23%);
+    --DarkCyan: hsl(181, 89%, 31%);
+    --TiffanyBlue: hsl(160, 41%, 70%);
+    --Vanilla: hsl(45, 61%, 78%);
+    --Gamboge: hsl(39, 100%, 47%);
+    --AlloyOrange: hsl(30, 98%, 40%);
+    --Rust: hsl(19, 97%, 37%);
+    --Rufous: hsl(5, 81%, 38%);
+    --Auburn: hsl(358, 64%, 37%);
+}
+header{
+    width: 100%;
+    position: fixed;
+    top: 0rem;
+    left: 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 0.4rem double var(--AlloyOrange);
+    border-top: none;
+    border-radius: 0rem 0rem 2rem 2rem;
+    background-color: var(--Rufous);
+    color: var(--Vanilla);
+    text-shadow: 1px 1px var(--Gamboge);
+    font-size: x-large;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    z-index: 100;
+}
+header .logo{
+    margin-left: 3rem;
+    height: 3rem;
+    transition: 300ms ease-in;
+}
+header a{
+    text-decoration: none;
+    color: var(--Vanilla);
+}
+nav{
+    display: flex;
+    margin-right: 2rem;
+}
+.navLink{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem 1rem;
+    transition: 350ms ease-in;
+    user-select: none;
+    cursor: pointer;
+}
+.navLink:hover{
+    text-shadow: 1px 1px var(--AlloyOrange);
+    color: var(--Gamboge);
+    text-decoration: underline 0.2rem var(--RichBlack);
+    transform: scale(1.1);
+}
+.navLink:hover > img{
+    content: url(../assets/icones/botoesNavbarOn.png);
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-name: girarIcone;
+}
+.navLink img{
+    height: 2rem;
+}
+@keyframes girarIcone{
+    0%{
+        transform: rotate(90deg);
+    }
+    70%{
+        transform: rotate(-130deg);
+    }
+    100%{
+        transform: rotate(40deg);
+    }
+}
+
+footer{
+    width: 100%;
+    padding-top: 1rem;
+    background-color: var(--RichBlack);
+    box-shadow: 0 0 2rem var(--MidnightGreen);
+    color: var(--DarkCyan);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    text-transform: uppercase;
+	z-index: 90;
+}
+footer section{
+    padding-bottom: 1rem;
+}
+footer a{
+    text-decoration:none;
+    color: var(--Vanilla);
+    transition: 0.4s ease-in-out;
+}
+footer a:hover{
+    color: var(--Gamboge);
+    text-decoration: none;
+}
+.conteudoCentral{
+    width: 70rem;
+    margin: auto;
+}
+.redeSocial{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    width: 50rem;
+}
+.redeSocial ul{
+    text-align: center;
+    list-style-type: none;
+}
+.redeSocial ul li{
+    display: inline;
+    padding: 0.6rem;
+    margin-right: 2rem;
+    text-align:left;
+}
+
+#download{
+	width: 100%;
+    background-color: var(--TiffanyBlue);
+    box-shadow: 0 0 2rem var(--TiffanyBlue);
+}
+#download article{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 30rem auto;
+	margin: auto;
+    gap: 1rem;
+    width: 60rem;
+    padding: 2rem;
+    color: var(--MidnightGreen);
+}
+#download h3{
+    font-size: x-large;
+    font-weight: 900;
+}
+#download .dowTexto{
+    grid-column: 1;
+    text-align:left;
+    padding-left: 2rem;
+}
+#download .dowBotoes{
+    grid-row: 1/4;
+    grid-column: 2;
+    padding: 1rem;
+}
+#download div ul{
+    list-style: none;
+}
+#download div ul li{
+    background-color: var(--AlloyOrange);
+    color: var(--Vanilla);
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    padding: 0.8rem;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    transition: 0.4s ease-out;
+}
+#download div ul li:hover{
+    background-color: var(--DarkCyan);
+    color: var(--TiffanyBlue);
+    transform: scaleX(1.05);
+    z-index: 5;
+}

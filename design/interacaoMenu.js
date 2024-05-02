@@ -12,7 +12,7 @@ document.addEventListener("scroll", () => {
     const navMenu = document.querySelector("header");
     const logo = document.querySelector("header img");
 
-    if (window.scrollY >= 700){
+    if (window.scrollY >= 10){
         navMenu.style.borderRadius = "0 0 0 0";
         navMenu.style.fontSize = "large";
         logo.style.height = "2.5rem";
