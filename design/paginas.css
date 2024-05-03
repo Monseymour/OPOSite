@@ -44,28 +44,6 @@ main{
 #inicio p {
     line-height: 1.5rem;
 }
-#bounty{
-    margin-top: 5rem;
-}
-#bounty table{
-    display: flex;
-    list-style: none;
-    text-align: left;
-}
-#bounty td{
-    border-left: 0.2rem solid var(--MidnightGreen);
-    padding: 0.2rem;
-}
-#bounty div{
-    margin-top: 2rem;
-    display: grid;
-    grid-template-rows: auto auto;
-    grid-template-columns: max-content;
-    gap: 2rem;
-}
-#bounty div img{
-    width: 12rem;
-}
 .sistemas{
     width: 60rem;
     display: flex;
@@ -120,20 +98,24 @@ main{
 	gap: 1rem;
 }
 #sistemas ol{
-	list-style: inside romano;
-	width: 50rem;
-	margin: 1rem 1rem;
+	list-style: inside circle;
+	width: 40rem;
+	margin: 1rem auto;
 	padding: 1rem;
 	background-color: var(--Rust);
 	border: solid var(--AlloyOrange) 0.2rem;
 	border-radius: 1rem;
-}
-#sistemas a :parent{
-	background-color: var(--Rufous);
+    text-align: start;
 }
 #sistemas ol li{
 	padding: 0.5rem;
 	color: var(--Vanilla);
+    transition: ease-in 0.3s;
+}
+#sistemas ol li:hover{
+    background-color: var(--Rufous);
+    opacity: 0.6;
+    border-radius: 0.5rem;
 }
 
 /* Conteudos das Paginas : Linhagens*/

@@ -170,3 +170,59 @@ footer a:hover{
     transform: scaleX(1.05);
     z-index: 5;
 }
+#bounty{
+    margin-top: 5rem;
+}
+#bounty table{
+    display: flex;
+    list-style: none;
+    text-align: left;
+}
+#bounty td{
+	width: 50rem;
+    border-left: 0.2rem solid var(--MidnightGreen);
+    padding: 0.2rem;
+}
+#cartazConteiner{
+    margin-top: 2rem;
+    display: flex;
+    gap: 0.5rem;
+	justify-content: center;
+}
+.cartazTemplate{
+	display: flex;
+	border-radius: 1rem;
+}
+.cartazTemplate img{
+    width: 10rem;
+}
+.cartazDetalhe{
+	background-color: var(--AlloyOrange);
+    width: 10rem;
+	margin: 2rem 0 0.1rem 0;
+	padding: 1.5rem 0.5rem;
+	border: double 0.2rem var(--Rufous);
+	border-left: none;
+	border-radius: 0 1rem 1rem 0;
+	text-align: start;
+	color: var(--Vanilla);
+}
+.cartazDetalhe div{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.cartazDetalhe div h3{
+	font-weight: Bold;
+}
+.cartazDetalhe h2{
+	padding-bottom: 1rem;
+}
+.cartazDetalhe div img{
+    width: 3rem;
+    height: 3rem;
+    
+}
+.cartazDetalhe p{
+	margin-bottom: 0.5rem;
+}
